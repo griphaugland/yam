@@ -8,7 +8,7 @@ on:
 
   workflow_dispatch:
 env:
-  EMAIL: ${{secrets.EMAIL}}¨
+  EMAIL: ${{secrets.EMAIL}}
   PASSWORD: ${{secrets.PASSWORD}}
   TOKEN: ${{secrets.TOKEN}}
 jobs:
