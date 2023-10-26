@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "Testing YAML",
   "main": "createPost.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "griphaugland",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.3.1"
-  }
+  },
+  "devDependencies": {}
 }

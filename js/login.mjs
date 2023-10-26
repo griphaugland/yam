@@ -1,6 +1,7 @@
-async function login() {
-    const email = process.env.EMAIL
-    const password =  process.env.PASSWORD
+import 'dotenv/config';
+export default async function login(email, password) {
+/*     const email = process.env.EMAIL */
+/*     const password =  process.env.PASSWORD */
     const url = 'https://api.noroff.dev/api/v1/social/auth/login';
     const res = await fetch(url, {
         method: 'POST',
@@ -11,7 +12,6 @@ async function login() {
         ),
     })
     const data = await res.json()
-    console.log(data)
-    localStorage.setItem('token', data.accessToken)
+    return data
 }
 login()
